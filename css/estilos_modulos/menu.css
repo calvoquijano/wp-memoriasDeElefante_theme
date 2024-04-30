@@ -1,0 +1,14 @@
+.menu-calvo{
+    background-color: var(--beige);
+    box-shadow: var(--elevation-3);
+}
+.dropdown-nav-submenu{
+    background: transparent;
+    border: none;
+}
+.menu-hamburguesa{
+    border: none;
+    &:focus{
+        box-shadow: 0 0 0;
+    }
+}

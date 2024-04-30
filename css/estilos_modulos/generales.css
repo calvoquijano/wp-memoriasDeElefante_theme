@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("../../images/bg/bg_anuncios.png") repeat;
+  background-size: 1080px;
+}
+h1 {
+  font: var(--h1);
+  color: var(--rojo);
+}
+h2 {
+  font: var(--h2);
+  color: var(--rojo);
+}
+h3 {
+  font: var(--h3);
+  color: var(--rojo);
+}
+h4 {
+  font: var(--h4);
+  color: var(--rojo);
+}
+h5 {
+  font: var(--h5);
+  color: var(--rojo);
+}
+h6 {
+  font: var(--h6);
+  color: var(--rojo);
+}
+p {
+  font: var(--p);
+}
+b {
+  font: var(--p-b);
+}
+/**Tarjetas**/
+.tarjeta-grande {
+  border-radius: 0;
+  border: 0.1rem dashed var(--rojo);
+  background-color: transparent;
+  img {
+    border-radius: 0;
+    width: 100%;
+  }
+  .cuerpo-tarjeta {
+    border-bottom: 1px solid var(--azul);
+    border-left: 1px solid var(--azul);
+    border-right: 1px solid var(--azul);
+    margin-top: -2px;
+    background-color: var(--blanco);
+    .texto-tarjeta {
+      border: 1px dashed var(--cafe);
+      padding: 0.5rem;
+    }
+  }
+}
+
+/**Botones y links**/
+.btn-general, .btn-general:visited{
+  color: var(--blanco);
+  background-color: var(--azul);
+  border: 2px solid var(--blanco-real);
+  border-radius: 0;
+  font: var(--p-b);
+  box-shadow: var(--elevation-2);
+  padding: var(--tamano-7) var(--tamano-6) !important;
+  &:hover, &:active, &:focus {
+    color: var(--beige) !important;
+    background-color: var(--azul-oscuro);
+    border: 2px solid var(--beige);
+    box-shadow: var(--elevation-1);
+  }
+}
+.btn-violeta, .btn-violeta:visited {
+  background-color: var(--violeta);
+  &:hover, &:active, &:focus {
+    background-color: var(--morado);
+  }
+}
+.btn-menu-nav, .btn-menu-nav:visited {
+  background-color: var(--beige);
+  font: var(--p-nav);
+  color: var(--rojo);
+  &:hover, &:active, &:focus {
+    background-color: var(--beige-oscuro);
+    color: var(--rojo) !important;
+  }
+}
+.vinculo-general, .vinculo-general:visited{
+  font: var(--h6);
+  color: var(--azul);
+  text-decoration: underline;
+  &:hover, &:active, &:focus {
+    color: var(--azul-oscuro);
+  }
+}
+/*Barra de progreso*/
+.tarjeta-progreso{
+  background-color: var(--blanco);
+  border: 1px dashed var(--azul);
+}
+.barra-progreso{
+  height: var(--tamano-8); 
+  width: 80%;
+  border-radius: 0;
+  background-color: var(--beige);
+  box-shadow: var(--elevation-1);
+  & .progress-bar{
+    background-color: var(--rojo);
+  }
+}
+/*Colores de texto*/
+.textos-azules{
+  color: var(--azul);
+}
+/*Colores y backgrounds*/
+.header-cero {
+  background-color: var(--blanco);
+}
+.header-uno {
+  background-color: var(--amarillo-claro);
+}
+.header-dos {
+  background-color: var(--verde-claro);
+}
+.header-tres {
+  background-color: var(--rosa);
+}
+.header-cuatro {
+  background-color: var(--azul-claro);
+}
+.bg-anuncios{
+  background: url("../../images/bg/bg_anuncios-nitido.jpg") repeat;
+  background-size: 1080px;
+}
+/*Elevaciones*/
+.elevacion-uno{
+  box-shadow: var(--elevation-1);
+}
+.elevacion-dos{
+  box-shadow: var(--elevation-2);
+}
+.elevacion-tres{
+  box-shadow: var(--elevation-3);
+}
+.elevacion-interna{
+  box-shadow: var(--inset-1);
+}
+.elevacion-interna-externa-uno{
+  box-shadow: var(--inset-1), var(--elevation-1);
+}
+.elevacion-interna-externa-dos{
+  box-shadow: var(--inset-1), var(--elevation-2);
+}
+.elevacion-interna-externa-tres{
+  box-shadow: var(--inset-1), var(--elevation-3);
+}
+/*Iconos*/
+i{
+  vertical-align: middle;
+  &.ico-descarga{
+    content: url('../../images/icons/download.svg');
+  }
+  &.ico-flecha-azul{
+    content: url('../../images/icons/arrow_forward.svg');
+  }
+  &.ico-wa{
+    content: url('../../images/icons/wa.svg');
+  }
+  &.ico-mail{
+    content: url('../../images/icons/mail.svg');
+  }
+  &.ico-figma{
+    content: url('../../images/icons/simple-icons_figma.svg');
+  }
+  &.ico-xd{
+    content: url('../../images/icons/simple-icons_xd.svg');
+  }
+  &.ico-sketch{
+    content: url('../../images/icons/simple-icons_sketch.svg');
+  }
+  &.ico-maze{
+    content: url('../../images/icons/maze.svg');
+  }
+  &.ico-html{
+    content: url('../../images/icons/simple-icons_html5.svg');
+  }
+  &.ico-css{
+    content: url('../../images/icons/simple-icons_css3.svg');
+  }
+  &.ico-js{
+    content: url('../../images/icons/simple-icons_javascript.svg');
+  }
+  &.ico-react{
+    content: url('../../images/icons/simple-icons_react.svg');
+  }
+  &.ico-ts{
+    content: url('../../images/icons/cib_typescript.svg');
+  }
+  &.ico-bootstrap{
+    content: url('../../images/icons/simple-icons_bootstrap.svg');
+  }
+  &.ico-sass{
+    content: url('../../images/icons/simple-icons_sass.svg');
+  }
+  &.ico-java{
+    content: url('../../images/icons/la_java.svg');
+  }
+  &.ico-sql{
+    content: url('../../images/icons/mysql.svg');
+  }
+  &.ico-ae{
+    content: url('../../images/icons/simple-icons_after.svg');
+  }
+  &.ico-psd{
+    content: url('../../images/icons/simple-icons_photoshop.svg');
+  }
+  &.ico-premiere{
+    content: url('../../images/icons/simple-icons_premiere.svg');
+  }
+  &.ico-ai{
+    content: url('../../images/icons/simple-icons_illustrator.svg');
+  }
+  &.ico-world{
+    content: url('../../images/icons/bx_world.svg');
+  }
+}
