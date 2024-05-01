@@ -118,19 +118,19 @@ b {
   color: var(--azul);
 }
 /*Colores y backgrounds*/
-.header-cero {
+.slider-cero {
   background-color: var(--blanco);
 }
-.header-uno {
+.slider-uno {
   background-color: var(--amarillo-claro);
 }
-.header-dos {
+.slider-dos {
   background-color: var(--verde-claro);
 }
-.header-tres {
+.slider-tres {
   background-color: var(--rosa);
 }
-.header-cuatro {
+.slider-cuatro {
   background-color: var(--azul-claro);
 }
 .bg-anuncios{
