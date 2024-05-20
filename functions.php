@@ -73,4 +73,7 @@ require_once('includes/scripts-styles.php');
  * scripts definitions
  */
 require_once('includes/scripts-javascript.php');
-
+/**
+ *  menu definitions
+ */
+require_once('includes/menus.php');

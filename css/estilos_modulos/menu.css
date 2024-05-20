@@ -2,6 +2,28 @@
     background-color: var(--beige);
     box-shadow: var(--elevation-3);
 }
+.menu-menu-principal-container .menu{
+    display: flex;
+    list-style: none;
+}
+.menu-menu-principal-container .sub-menu{
+    flex-direction: column;
+    position: absolute;
+    margin: 20px 0;
+    padding: 0 5px;
+    display: none;
+    list-style: none;
+}
+.menu-item-has-children:hover .sub-menu{
+    display: block;
+}
+.menu-menu-principal-container .sub-menu .menu-item{
+    margin: 20px 0 40px;
+}
+.menu-menu-principal-container .menu .menu-item{
+    margin-right: .25rem !important;
+    margin-left: .25rem !important;
+}
 .dropdown-nav-submenu{
     background: transparent;
     border: none;

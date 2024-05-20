@@ -81,10 +81,14 @@ b {
     background-color: var(--morado);
   }
 }
-.btn-menu-nav, .btn-menu-nav:visited {
+.menu-item a, .menu-item a:visited {
   background-color: var(--beige);
   font: var(--p-nav);
   color: var(--rojo);
+  border: 2px solid var(--blanco-real);
+  box-shadow: var(--elevation-2);
+  padding: var(--tamano-7) var(--tamano-6) !important;
+  text-decoration: none;
   &:hover, &:active, &:focus {
     background-color: var(--beige-oscuro);
     color: var(--rojo) !important;
