@@ -11,9 +11,16 @@ h1 {
   font: var(--h1);
   color: var(--rojo);
 }
+h1.titulo-site{
+  font: var(--h6);
+}
 h2 {
   font: var(--h2);
   color: var(--rojo);
+}
+h2.subtitulo-site {
+  font: var(--p);
+  color: var(--cafe);
 }
 h3 {
   font: var(--h3);
@@ -36,6 +43,11 @@ p {
 }
 b {
   font: var(--p-b);
+}
+/* Título página */
+.cinta-superior{
+  background-color: var(--beige-oscuro);
+  padding: var(--tamano-8) var(--tamano-7);
 }
 /**Tarjetas**/
 .tarjeta-grande {
@@ -69,19 +81,19 @@ b {
   box-shadow: var(--elevation-2);
   padding: var(--tamano-7) var(--tamano-6) !important;
   &:hover, &:active, &:focus {
-    color: var(--beige) !important;
-    background-color: var(--azul-oscuro);
+  
+    background-color: var(--beige-oscuro);
     border: 2px solid var(--beige);
     box-shadow: var(--elevation-1);
   }
 }
-.btn-violeta, .btn-violeta:visited {
+.btn-violeta, .btn-violeta:visited{
   background-color: var(--violeta);
   &:hover, &:active, &:focus {
     background-color: var(--morado);
   }
 }
-.menu-item a, .menu-item a:visited {
+.menu-item a, .menu-item a:visited, .dropdown-toggle .menu-item a  {
   background-color: var(--beige);
   font: var(--p-nav);
   color: var(--rojo);
@@ -90,7 +102,7 @@ b {
   padding: var(--tamano-7) var(--tamano-6) !important;
   text-decoration: none;
   &:hover, &:active, &:focus {
-    background-color: var(--beige-oscuro);
+    background-color: none;
     color: var(--rojo) !important;
   }
 }

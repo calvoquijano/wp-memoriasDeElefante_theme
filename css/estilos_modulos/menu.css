@@ -1,36 +1,81 @@
-.menu-calvo{
-    background-color: var(--beige);
-    box-shadow: var(--elevation-3);
+.menu-calvo {
+  background-color: var(--beige);
+  box-shadow: var(--elevation-3);
 }
-.menu-menu-principal-container .menu{
-    display: flex;
-    list-style: none;
+.menu-menu-principal-container .menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
-.menu-menu-principal-container .sub-menu{
+.dropdown-toggle,
+.btn.active {
+  border: 2px solid var(--blanco-real) !important;
+  color: var(--blanco-real) !important;
+  padding: 1.1rem 1.6rem !important;
+}
+.show a{
+  &:focus{
+    color: white;
+  }
+}
+.menu-menu-principal-container .sub-menu {
+  flex-direction: column;
+  position: absolute;
+  margin: 24px 5px 0;
+  padding: 0 5px;
+  display: none;
+  list-style: none;
+}
+.menu-item-has-children:hover .sub-menu {
+  display: flex;
+}
+.dropdown-toggle a {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.menu-menu-principal-container .menu .menu-item {
+  align-self: center;
+  padding: 5px;
+}
+.dropdown-toggle .sub-menu .menu-item {
+  padding: 20px 0;
+  align-self: flex-start;
+}
+.dropdown-nav-submenu {
+  background: transparent;
+  border: none;
+}
+.menu-hamburguesa {
+  border: none;
+  &:focus {
+    box-shadow: 0 0 0;
+  }
+}
+@media (max-width: 980px) {
+  .menu-menu-principal-container .menu {
     flex-direction: column;
-    position: absolute;
-    margin: 20px 0;
-    padding: 0 5px;
-    display: none;
-    list-style: none;
-}
-.menu-item-has-children:hover .sub-menu{
-    display: block;
-}
-.menu-menu-principal-container .sub-menu .menu-item{
-    margin: 20px 0 40px;
-}
-.menu-menu-principal-container .menu .menu-item{
-    margin-right: .25rem !important;
-    margin-left: .25rem !important;
-}
-.dropdown-nav-submenu{
-    background: transparent;
+  }
+  .menu-menu-principal-container .menu .menu-item a {
+    display: inline-block;
+    width: 90%;
+    background: none;
     border: none;
-}
-.menu-hamburguesa{
-    border: none;
-    &:focus{
-        box-shadow: 0 0 0;
-    }
+    box-shadow: none;
+  }
+  .menu-menu-principal-container .menu .menu-item {
+    width: 90%;
+    padding: 5px !important;
+    border-radius: 0;
+    font: var(--p-b);
+    box-shadow: var(--elevation-2);
+    border: 2px solid var(--blanco-real);
+    margin: 5px;
+    text-align: center;
+    align-self: center;
+  }
+  .menu-menu-principal-container .sub-menu{
+    position: relative;
+    align-items: center;
+  }
 }
