@@ -77,3 +77,7 @@ require_once('includes/scripts-javascript.php');
  *  menu definitions
  */
 require_once('includes/menus.php');
+/**
+ *  sidebars definitions
+ */
+require_once('includes/sidebars.php');
